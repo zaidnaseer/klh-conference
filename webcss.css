@@ -98,6 +98,48 @@
   .menu a:hover {
     color: #007BFF; /* A soft blue hover color */
   }
+  .card-container {
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    
+  }
+  .card {
+    display: inline-block;
+    background-color: #55d5d5;
+    width: 250px;
+    height: 150px;
+    position:relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.6);
+    
+  }
+  .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    padding-top: -10px;
+  }
+  .content {
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+  }
+  .content h3 {
+    font-size: 18px;
+    color: black;
+    align-items: center;
+  }
+  .content p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
 
   /* .topics-container {
     background-color: #fff;
