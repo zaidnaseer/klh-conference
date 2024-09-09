@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* Navigation Bar Styles */
+  .navbar {
+    background-color: #A3DCEB; /* Soft blue background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    background-color: #E3F4F9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Small shadow for the logo */
+  }
+
+  .menu {
+    display: flex;
+    gap: 30px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  .menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* Optional: Add hover effect for links */
+  .menu a:hover {
+    color: #007BFF; /* A soft blue hover color */
+  }
