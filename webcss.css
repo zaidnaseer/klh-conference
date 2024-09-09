@@ -9,6 +9,38 @@
     
   }
 
+  header {
+    position: relative;
+  }
+  #background_hyd {
+    width: 100%;
+  }
+  .circle-header {
+    background-color: rgba(0, 132, 255, 0.6);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 3em;
+    margin: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+ 
+
+  h1 {
+    padding: .5em;
+    text-align: center;
+    color: white;
+  } 
+
+  p {
+    padding: 1em;
+    text-align: center;
+    color: white;
+  }
+
   /* Navigation Bar Styles */
   .navbar {
     background-color: #A3DCEB; /* Soft blue background */
