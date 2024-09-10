@@ -27,6 +27,7 @@
     left: 0;
   }
 
+  
  
 
   h1 {
@@ -45,8 +46,8 @@
 
   /* Navigation Bar Styles */
   .navbar {
-    background-color: #A3DCEB; /* Soft blue background */
-    padding: 20px;
+    background-color:tomato; /* Soft blue background */
+    padding: .5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +71,7 @@
 
   .menu a {
     text-decoration: none;
-    color: #333;
+    color: whitesmoke;
     font-size: 18px;
     font-weight: 500;
     position: relative;
@@ -81,7 +82,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #333;
+    background-color: #007BFF;
     bottom: -5px;
     left: 0;
     transform: scaleX(0);
@@ -96,7 +97,7 @@
 
   /* Optional: Add hover effect for links */
   .menu a:hover {
-    color: #007BFF; /* A soft blue hover color */
+    color: #333; /* A soft blue hover color */
   }
   .card-container {
     display:flex;
@@ -141,6 +142,18 @@
     line-height: 1.5;
     margin-bottom: 20px;
   }
+
+  section h1 {
+    font-size: 2.5rem;
+    text-decoration: underline wavy;
+    text-decoration-color: yellowgreen;
+    text-underline-offset: 6px;
+  }
+
+  section p {
+    font-size: 1.25rem;
+  }
+
 
   /* .topics-container {
     background-color: #fff;
