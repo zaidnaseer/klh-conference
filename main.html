@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Scroll Progess Bar Starts -->
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+                                                                                    <!-- TO-DO -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const progressBar = document.getElementById('progressBar');
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrollPercent + '%';
+            
+            
+        });
+    </script>
+    <!-- SCroll Bar Progress Ends -->
+
+
     <nav class="navbar">
         <div class="logo">PPFL25</div>
         <div class="menu">
@@ -20,6 +40,7 @@
         </div>
       </nav>
       
+      
     <header>
         <img src="hyd bg.jpg" alt="Background image of Hyderabad." id="background_hyd">
         <div class="circle">
@@ -27,6 +48,7 @@
             <p id="desc-header">The International Conference on Building Secure and Scalable Privacy-Enhanced Federated Learning Systems</p>
         </div>
     </header>
+    
     <main>
     
     <section id="section-about">
@@ -41,74 +63,74 @@
 
     <section id="section-topics">
         <h1>Topics in this Conference</h1>
-    
         <div class="card-container">
+
             <div class="card">
-            <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+            <img src="/healthcare.jpg" alt="avatar" >
                 <div class="content">
                     <h3>Healthcare Data Privacy</h3>
                     
                 </div>
             </div>   
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Financial Fraud Detect</h3>
                         
                     </div>
             </div>
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Smart City</h3>
                         
                     </div>
             </div>
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Autonomous vehicles</h3>
                         
                     </div>
             </div>
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Personalized Marketing</h3>
                     </div>
             </div>  
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>AI in Education</h3>
                     </div>
             </div>  
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Social Network Analysis</h3>
                     </div>
             </div>  
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Telecommunications Monitoring</h3>
                     </div>
             </div>  
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Energy Grid Management</h3>
                     </div>
             </div>    
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Retail Customer Analytics</h3>
                     </div>
             </div>       
             <div class="card">
-                <img src="/klh-conference/images/healthcare.jpg" alt="avatar" >
+                <img src="/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Cybersecurity Defence</h3>
                     </div>
