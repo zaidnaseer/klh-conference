@@ -1,0 +1,7 @@
+Scroll animation when user presses a link in nav bar 
+text float in animations
+opening tray animation when faq section is opened
+
+timeline
+
+Make circle responsive
