@@ -13,21 +13,7 @@
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div>
-                                                                                    <!-- TO-DO -->
-    <script>
-        window.addEventListener('scroll', function() {
-            const progressBar = document.getElementById('progressBar');
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            progressBar.style.width = scrollPercent + '%';
-            
-            
-        });
-    </script>
-    <!-- SCroll Bar Progress Ends -->
-
-
+    
     <nav class="navbar">
         <div class="logo">PPFL25</div>
         <div class="menu">
@@ -193,5 +179,7 @@
     </section>
 
     </main>
+
+    <script src="scrollbar.js"></script>
 </body>
 </html>
