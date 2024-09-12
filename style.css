@@ -17,6 +17,19 @@ section {
   padding: 1em;
 }
 
+#section-committee {
+  text-align: center;
+}
+
+#section-committee dt {
+  font-weight: 600;
+  margin-top: .75em;
+}
+
+#section-committee dd {
+  margin-bottom: .75em;
+}
+
 h1 {
   padding: 1em;
   text-align: center;
@@ -36,15 +49,17 @@ header {
 
 /* FAQ Section */
 
-summary {
+/* summary {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-}
+} */
 
-summary::after {
+
+
+/* summary::after {
   content: '';
   width: 18px;
   height: 10px;
@@ -72,13 +87,8 @@ details[open] summary {border-radius: 5px 5px 0 0;}
 details { 
   cursor: pointer;
   border: 1px solid #777;
-  margin: 0 .5em;
+  border-bottom: 0px;
   padding: .5em;
-}
-
-/* From the second element onwards, each detail will not have the top border */
-details:nth-of-type(n+2){
-  border-top-width: 0px;
 }
 
 details:first-of-type{
@@ -87,12 +97,15 @@ details:first-of-type{
 
 details:last-of-type{
   border-radius: 0 0 5px 5px;
-}
+  border-bottom: 1px solid #777;
+} */
 
 
 /* End FAQ Styling */
 
-.circle {
+/* Start Circle Styling */
+
+#circle {
   background-color: rgba(0, 132, 255, 0.7);
   width: 35vw;
   height: 35vw;
@@ -100,7 +113,7 @@ details:last-of-type{
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;;
+  overflow: hidden;
 
   margin: 1em;
 
@@ -124,7 +137,11 @@ details:last-of-type{
   font-size: 3rem;
   font-weight: 900;
 }
-/* Navigation Bar Styles */
+
+/* End Circle Styling */
+
+/* Start Navigation Bar Styling */
+
 .navbar {
   background-color:tomato; /* Soft blue background */
   padding: .3em;
@@ -179,6 +196,9 @@ details:last-of-type{
 .menu a:hover {
   color: yellowgreen;
 }
+
+/* End Navigation Bar Styling */
+
 .card-container {
   display:flex;
   flex-direction: column;
@@ -250,33 +270,84 @@ section h1 {
 }
 /* Page scroll ends */
 
-/* .topics-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+/* Start Animations */
+
+.h1-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+section h1 {
+  padding: 0;
+  margin: 1em;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transform: scale(1.2);
+  transition: transform 1s ease-out;
+}
+section h1.visible {
+  transform: scale(1);
+}
+section h1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: yellowgreen;
+  transition: width 1s ease-out, left 1s ease-out;
+  transform: translateX(-50%);
+}
+section h1.visible::after {
   width: 100%;
+  left: 50%;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+section > p {
+  opacity: 0.2;
+  transform: translateY(+30px);
+  transition: opacity .5s ease-out, transform 1.2s ease-out;
 }
 
-td {
-  padding: 10px 0;
-  font-size: 18px;
-  color: #555;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
+section > p.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-td:last-child {
-  border-bottom: none;
+section dt, section dd {
+  opacity: 0;
+  transform: translateX(-20px) scale(0.95);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  will-change: opacity, transform;
 }
 
-tr:hover td {
-  background-color: #f9f9f9;
+section dt.visible, section dd.visible {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+  
+
+/* section dt{
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity .4s ease-in, transform .4s ease-in;
+}
+
+section dd {
+  opacity: 0;
+  transform: translateX(-30px);
+  
+  transition: opacity .2s ease-out, transform .2s ease-out;
+  // transition-delay: .5s; 
+}
+
+ section dl:nth-child(n) {
+  transition-delay: calc(n*.5s);
+} 
+
+section dt.visible, section dd.visible {
+  opacity: 1;
+  transform: translateX(0);
 } */
