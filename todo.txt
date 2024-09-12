@@ -4,4 +4,6 @@ opening tray animation when faq section is opened
 
 timeline
 
+design committee section
+
 Make circle responsive
