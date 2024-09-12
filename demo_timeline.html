@@ -1,0 +1,212 @@
+<style>
+	:root {
+		/*--primary-color: wheat;*/
+		--background-color: whitesmoke;
+		--font: sans-serif;
+	  }
+	  
+	  * {
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  body {
+		background: var(--background-color);
+		font-family: var(--font);
+		display: flex;
+		justify-content: center;
+	  }
+	  
+	  /* Timeline Container */
+	  .timeline {
+		/*background: var(--primary-color);*/
+		margin: 10px auto;
+		padding: 10px;
+	  }
+	  
+	  /* Card container */
+	  .card {
+		position: relative;
+		max-width: 1000px;
+		display: flex;
+		justify-content: flex-start;
+		
+	  }
+	  
+	  /* setting padding based on even or odd */
+	  .card:nth-child(odd) {
+		padding: 30px 0 30px 30px;
+		justify-content: flex-start;
+	  }
+	  .card:nth-child(even) {
+		padding: 30px 30px 30px 0;
+		justify-content: flex-end;
+	  }
+	  /* Global ::before */
+	  .card::before {
+		content: "";
+		position: absolute;
+		width: 50%;
+		border: solid orangered;
+	  }
+	  
+	  /* Setting the border of top, bottom, left */
+	  .card:nth-child(odd)::before {
+		left: 0px;
+		top: -4.5px;
+		bottom: -4.5px;
+		border-width: 5px 0 5px 5px;
+		border-radius: 50px 0 0 50px;
+	  }
+	  
+	  /* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+	  @media only screen and (max-width: 1000px) {
+		.card:nth-child(odd)::before {
+		  top: -5px;
+		  bottom: -5px;
+		}
+	  }
+	  
+	  /* Setting the border of top, bottom, right */
+	  .card:nth-child(even)::before {
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border-width: 5px 5px 5px 0;
+		border-radius: 0 50px 50px 0;
+	  }
+	  
+	  /* Removing the border if it is the first card */
+	  .card:first-child::before {
+		border-top: 0;
+		border-top-left-radius: 0;
+	  }
+	  
+	  /* Removing the border if it is the last card  and it's odd */
+	  .card:last-child:nth-child(odd)::before {
+		border-bottom: 0;
+		border-bottom-left-radius: 0;
+	  }
+	  
+	  /* Removing the border if it is the last card  and it's even */
+	  .card:last-child:nth-child(even)::before {
+		border-bottom: 0;
+		border-bottom-right-radius: 0;
+	  }
+	  
+	  /* Information about the timeline */
+	  .info {
+		display: flex;
+		flex-direction: column;
+		background: #333;
+		max-width: 100%;
+		color: grey;
+		border-radius: 10px;
+		padding: 10px;
+		width: 300px;
+	  }
+	  
+	  /* Title of the card */
+	  .title {
+		color: white;
+		height: 50px;
+		position:relative;
+		font-weight: bolder;
+		
+	  }
+	  .Date {
+		border-bottom: 3px solid tomato; /* Green border */
+		width: 110px;
+		display: inline-block;
+		background-color: #333; /* Dark background */
+		color: lightsalmon;
+		font-weight: bold;
+		margin: 10px 0;
+	  }
+	  
+	  /* Timeline dot  */
+	  .title::before {
+		content: "";
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		background: white;
+		border-radius: 999px;
+		border: 3px solid orangered;
+	  }
+	  /*.Date:nth-child(odd) {
+		text-align: right;
+		float: right;
+	  }
+	  .Date:nth-child(even) {
+		text-align: right;
+		float: right;
+	  }*/
+	  .card:nth-child(odd) > .info > .Date {
+		text-align: left;
+		float: left;
+	  }
+	  .card:nth-child(odd) > .info > .title {
+		text-align: left;
+	  }
+	  
+	  /* text right if the card is even  */
+	  .card:nth-child(even) > .info > .title {
+		text-align: right;
+	  }
+	  .card:nth-child(even) > .info > .Date {
+		text-align: right;
+    	float: right; 
+    	
+	  }
+	  
+	  /* setting dot to the left if the card is odd */
+	  .card:nth-child(odd) > .info > .title::before  {
+		left: -45px;
+	  }
+	  
+	  /* setting dot to the right if the card is odd */
+	  .card:nth-child(even) > .info > .title::before {
+		right: -45px;
+	  }
+	  
+</style>
+
+
+
+
+<div class="timeline">
+	<div class="outer">
+	  <div class="card">
+		<div class="info">
+		  <div class="Date">Sept 25, 2025</div>
+		  <div class="title"><br>Paper Submission Date</div>
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="info">
+		  <div class="Date">Sept 25, 2025</div>
+		  <div class="title"><br><b>Paper Submission Date</b></div>
+		  
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="info">
+		  <div class="Date">Sept 25, 2025</div>
+		  <div class="title"><br><b>Paper Submission Date</b></div>
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="info">
+		  <div class="Date">Sept 25, 2025</div>
+		  <div class="title"><br><b>Paper Submission Date</b></div>
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="info">
+		  <div class="Date">Sept 25, 2025</div>
+		  <div class="title"><br>Paper Submission Date</div>
+		</div>
+	  </div>
+	</div>
+  </div>
