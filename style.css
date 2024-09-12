@@ -199,6 +199,28 @@ details:last-of-type{
 
 /* End Navigation Bar Styling */
 
+/* Topic Card Starts */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from{
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .card-container {
   display:flex;
   flex-direction: column;
@@ -216,13 +238,31 @@ details:last-of-type{
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
   
 }
+.card:nth-child(odd).animate {
+  animation: slideInLeft 0.5s ease-out;
+}
+.card:nth-child(even).animate{
+  animation:slideInRight 0.5s ease-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.32);
+}
+
 .card img {
   width: 100%;
   height: 60%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
 .content {
   background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
   position: absolute;
@@ -231,6 +271,10 @@ details:last-of-type{
   right: 0;
   padding: 10px;
 }
+.card:hover .content {
+  transform: translateY(0);
+}
+
 .content h3 {
   font-size: 18px;
   color: black;
@@ -252,6 +296,8 @@ section h1 {
 .no-wrap {
   white-space: nowrap;
 }
+/* Topic Card Ends*/
+
 /* Page scroll starts */
 .progress-container {
   position: fixed;
