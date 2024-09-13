@@ -143,7 +143,7 @@ details:last-of-type{
 #title-header, #desc-header {
   color: white;
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
   padding:.25em;
 }
@@ -151,7 +151,6 @@ details:last-of-type{
 #title-header {
   font-size: 3rem;
   font-weight: 900;
-  font-size: 64px;
 }
 
 /* End Circle Styling */
@@ -159,13 +158,27 @@ details:last-of-type{
 /* Start Navigation Bar Styling */
 
 .navbar {
-  background-color:orangered;
-  padding: .3em;
+  background-color: orangered;
+  padding: 0.3em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+
+#klh-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  /* background-color: rgb(251, 247, 245); */
+}
+
+/* #navbar-icon {
+  display: none;
+} */
 
 .logo {
   font-size: 24px;
@@ -174,7 +187,7 @@ details:last-of-type{
   background-color: #E3F4F9;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Small shadow for the logo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -185,12 +198,58 @@ details:last-of-type{
 .menu a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 18px;
   font-weight: 550;
   position: relative;
+  padding: 0.5em;
+  transition: background-color 0.75s ease-out;
+  border-radius: 5px;
 }
 
-.menu a::after {
+.menu a:hover {
+  color: white;
+  background-color: rgb(173, 46, 0);
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: green;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    align-self: flex-end;
+    margin-top: -30px;
+  }
+}
+
+/* End Navigation Bar Styling */
+/* .menu a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -201,20 +260,7 @@ details:last-of-type{
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
-}
-
-.menu a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-/* Optional: Add hover effect for links */
-.menu a:hover {
-  color: yellowgreen;
-}
-
-/* End Navigation Bar Styling */
-
+} */
 /* Topic Card Starts */
 
 @keyframes slideInLeft {
@@ -324,7 +370,7 @@ section h1 {
   left: 0;
   width: 100%;                       /* To Do*/
   height: 7px;                        /* Page progress scroll should initially be hidden on navigation bar */
-  background: tomato;
+  background: orangered;
   z-index: 99;
   /* display: none; */
 }
@@ -433,4 +479,43 @@ section dt.visible, section dd.visible {
   background: yellowgreen;
   height: 15vw;
   transform: rotate(225deg);
+}
+
+@media screen and (max-width: 768px) {
+  #circle {
+    width: 80vw;
+    height: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  #title-header {
+    font-size: 2rem;
+  }
+
+  #desc-header {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media query for very small screens */
+@media screen and (max-width: 480px) {
+  #circle {
+    width: 90vw;
+    height: 90vw;
+  }
+  
+nav {
+  width: 0;
+}
+
+  #title-header {
+    font-size: 1.5rem;
+  }
+
+  #desc-header {
+    font-size: 1rem;
+  }
 }

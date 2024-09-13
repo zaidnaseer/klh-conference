@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="accordion.css">
 </head>
 <body>
-    <!-- JS File Connection starts-->
-     <script src="animation.js"></script>
 
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
@@ -24,12 +22,17 @@
           <a href="#section-faq">FAQ</a>
           <a href="#section-committee">Committee</a>
           <a href="#">Contact</a>
+          <a href="javascript:void(0);" id="navbar-icon" onclick="navbar_icon_clicked()">
+            <img src="images/hamburger_icon.svg" style="fill: #ff0000;" alt="Navigation Bar Icon" srcset="">
+          </a>
         </div>
-      </nav>
-      
+    </nav>
+    <!-- <script>document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.menu').classList.toggle('active');
+    });</script> -->
       
     <header>
-        <img src="hyd bg.jpg" alt="Background image of Hyderabad." id="background_hyd">
+        <img src="images/hyd bg.jpg" alt="Background image of Hyderabad." id="background_hyd">
         <div id="circle">
             <h1 id="title-header">PPFL 2025</h1>
             <p id="desc-header">The International Conference on Building Secure and Scalable <span class="no-wrap">Privacy-Enhanced</span> Federated Learning Systems</p>
@@ -39,6 +42,10 @@
     
     <main>
     
+    <div id="klh-logo-wrapper">
+        <img src="images/klh_logo.png" alt="KL University, Hyderabad" srcset="" id="klh-logo">
+    </div>
+
     <section id="section-about">
         <div class="h1-wrapper"><h1>About</h1></div>
         <p>Building secure and scalable privacy-enhanced federated learning systems involves creating architectures where multiple entities collaboratively train models while keeping their data localized, thus enhancing privacy. Such systems employ advanced cryptographic methods like homomorphic encryption and differential privacy to ensure that individual data contributions remain confidential. Scalability is addressed by optimizing communication protocols and data compression techniques to handle large volumes of data efficiently across diverse networks. Additionally, robust anomaly detection mechanisms are integrated to safeguard against malicious participants and data poisoning. Implementing decentralized governance models can further enhance trust and compliance with global data protection regulations. The result is a federated system that not only respects user privacy but is also resilient and capable of operating at scale, making it suitable for widespread adoption in sensitive industries like healthcare and finance.</p>
@@ -58,71 +65,71 @@
             
 
             <div class="card">
-            <img src="/healthcare.jpg" alt="avatar" >
+            <img src="images/healthcare.jpg" alt="avatar" >
                 <div class="content">
                     <h3>Healthcare Data Privacy</h3>
                     
                 </div>
             </div>   
             <div class="card">
-                <img src="/healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Financial Fraud Detect</h3>
                         
                     </div>
             </div>
             <div class="card">
-                <img src="/healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Smart City</h3>
                         
                     </div>
             </div>
             <div class="card">
-                <img src="/healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Autonomous vehicles</h3>
                         
                     </div>
             </div>
             <div class="card">
-                <img src="healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Personalized Marketing</h3>
                     </div>
             </div>  
             <div class="card">
-                <img src="healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>AI in Education</h3>
                     </div>
             </div>  
             <div class="card">
-                <img src="healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Social Network Analysis</h3>
                     </div>
             </div>  
             <div class="card">
-                <img src="healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Telecommunications Monitoring</h3>
                     </div>
             </div>  
             <div class="card">
-                <img src="/healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Energy Grid Management</h3>
                     </div>
             </div>    
             <div class="card">
-                <img src="/healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Retail Customer Analytics</h3>
                     </div>
             </div>       
             <div class="card">
-                <img src="/healthcare.jpg" alt="avatar" >
+                <img src="images/healthcare.jpg" alt="avatar" >
                     <div class="content">
                         <h3>Cybersecurity Defence</h3>
                     </div>
@@ -194,5 +201,6 @@
     <script src="scrollbar.js"></script>
     <script src="accordion.js"></script>
     <script src="scroll-animations.js"></script>
+    <script src="animation.js"></script>
 </body>
 </html>
