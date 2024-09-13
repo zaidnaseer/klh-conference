@@ -47,7 +47,7 @@ details[open] > summary:before {
 summary:before {
     content: "";
     opacity: 0.6;
-    background-image: url('arrow.svg');
+    background-image: url('images/arrow.svg');
     /* background-image: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
