@@ -243,7 +243,7 @@ details:last-of-type{
   justify-content: center;
   align-items: center;
   gap: 20px;
-  
+
 }
 .card {
   display: inline-block;
@@ -255,13 +255,16 @@ details:last-of-type{
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;  
-  
+  opacity: 0;
+}
+.card.animate {
+  opacity: 1;
 }
 .card:nth-child(odd).animate {
-  animation: slideInLeft 0.5s ease-out;
+  animation: slideInLeft 0.5s ease-out forwards;
 }
 .card:nth-child(even).animate{
-  animation:slideInRight 0.5s ease-out;
+  animation:slideInRight 0.5s ease-out forwards;
 }
 .card:hover {
   transform: scale(1.05);
@@ -390,6 +393,8 @@ section dt.visible, section dd.visible {
   transform: translateX(0) scale(1);
 }
 
+
+
 /* section dt{
   opacity: 0;
   transform: translateX(-20px);
@@ -412,3 +417,20 @@ section dt.visible, section dd.visible {
   opacity: 1;
   transform: translateX(0);
 } */
+
+#square_decoration {
+  width: 5vw;
+  height: 5vw;
+  background: maroon;
+  transform: rotate(45deg) translateX(-25px);
+
+  transition: width 2s, height 2s, transform 2s, background 2s;
+}
+
+/* when the user scrolls, this should play */
+#square_decoration:hover {
+  width: 15vw;
+  background: yellowgreen;
+  height: 15vw;
+  transform: rotate(225deg);
+}

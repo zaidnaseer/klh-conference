@@ -5,5 +5,7 @@ window.addEventListener('scroll', function() {
     const scrollPercent = (scrollTop / docHeight) * 100;
     progressBar.style.width = scrollPercent + '%';
     
+    // const squareDecoration = document.getElementById('square_decoration');
+    // squareDecoration.classList.add('scrolled');
     
 });
