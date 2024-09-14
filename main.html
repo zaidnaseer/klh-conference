@@ -22,9 +22,9 @@
           <a href="#section-faq">FAQ</a>
           <a href="#section-committee">Committee</a>
           <a href="#">Contact</a>
-          <a href="javascript:void(0);" id="navbar-icon" onclick="navbar_icon_clicked()">
+          <!-- <a href="javascript:void(0);" id="navbar-icon" onclick="navbar_icon_clicked()">
             <img src="images/hamburger_icon.svg" style="fill: #ff0000;" alt="Navigation Bar Icon" srcset="">
-          </a>
+          </a> -->
         </div>
     </nav>
     <!-- <script>document.querySelector('.menu-toggle').addEventListener('click', function() {
@@ -32,7 +32,7 @@
     });</script> -->
       
     <header>
-        <img src="images/hyd bg.jpg" alt="Background image of Hyderabad." id="background_hyd">
+        <img src="images/hyd bg.jpg" alt="Background image of Hyderabad." id="background_hyd_image">
         <div id="circle">
             <h1 id="title-header">PPFL 2025</h1>
             <p id="desc-header">The International Conference on Building Secure and Scalable <span class="no-wrap">Privacy-Enhanced</span> Federated Learning Systems</p>
@@ -48,7 +48,16 @@
 
     <section id="section-about">
         <div class="h1-wrapper"><h1>About</h1></div>
-        <p>Building secure and scalable privacy-enhanced federated learning systems involves creating architectures where multiple entities collaboratively train models while keeping their data localized, thus enhancing privacy. Such systems employ advanced cryptographic methods like homomorphic encryption and differential privacy to ensure that individual data contributions remain confidential. Scalability is addressed by optimizing communication protocols and data compression techniques to handle large volumes of data efficiently across diverse networks. Additionally, robust anomaly detection mechanisms are integrated to safeguard against malicious participants and data poisoning. Implementing decentralized governance models can further enhance trust and compliance with global data protection regulations. The result is a federated system that not only respects user privacy but is also resilient and capable of operating at scale, making it suitable for widespread adoption in sensitive industries like healthcare and finance.</p>
+
+        <div class="row">
+            <p id="about-para-1">Building secure and scalable privacy-enhanced federated learning systems involves creating architectures where multiple entities collaboratively train models while keeping their data localized, thus enhancing privacy. Such systems employ advanced cryptographic methods like homomorphic encryption and differential privacy to ensure that individual data contributions remain confidential. Scalability is addressed by optimizing communication protocols and data compression techniques to handle large volumes of data efficiently across diverse networks.</p>
+            <img src="images/healthcare.jpg" alt="" srcset="" id="about-para-1-img">
+        </div>
+
+        <div class="row">
+            <img src="images/healthcare.jpg" alt="" srcset="" id="about-para-2-img">
+            <p id="about-para-2">Additionally, robust anomaly detection mechanisms are integrated to safeguard against malicious participants and data poisoning. Implementing decentralized governance models can further enhance trust and compliance with global data protection regulations. The result is a federated system that not only respects user privacy but is also resilient and capable of operating at scale, making it suitable for widespread adoption in sensitive industries like healthcare and finance.</p>
+        </div>
     </section>
 
     <section id="section-papers">
@@ -56,11 +65,11 @@
         <p>Researchers, Academicians and Industry Professionals are requested to submit their unpublished research findings related to Privacy-Preserving Federated Learning in this conference.<br></p>
     </section>
 
-    <section id="section-topics" >
+    <section id="section-topics">
         
         <div class="h1-wrapper"><h1>Topics in this Conference</h1></div>
         
-        <div id="square_decoration"></div>
+        <!-- <div id="square_decoration"></div> -->
         <div class="card-container">
             
 
@@ -198,7 +207,7 @@
 
     </main>
 
-    <script src="scrollbar.js"></script>
+    <script src="progressbar.js"></script>
     <script src="accordion.js"></script>
     <script src="scroll-animations.js"></script>
     <script src="animation.js"></script>

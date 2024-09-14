@@ -1,9 +1,14 @@
-Scroll animation when user presses a link in nav bar 
 text float in animations
-opening tray animation when faq section is opened
 
 timeline
 
-design committee section
+Make website responsive
 
-Make circle responsive
+progress bar should display after the navbar
+
+
+
+DONE:
+opening tray animation when faq section is opened
+design committee section
+Scroll animation when user presses a link in nav bar 

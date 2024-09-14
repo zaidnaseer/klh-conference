@@ -46,10 +46,22 @@ p {
 
 header {
   position: relative;
+  overflow:hidden;
 }
 
-#background_hyd {
+#background_hyd_image {
   width: 100%;
+  object-fit: cover;
+  animation: 10s scaleBackgroundImage forwards linear;
+}
+
+@keyframes scaleBackgroundImage {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* FAQ Section */
@@ -128,17 +140,19 @@ details:last-of-type{
   flex-direction: column;
   text-align: center;
 
-  animation: scaleUp 2s forwards;
+  /* animation: scaleUp 10s forwards; */
 }
 
 @keyframes scaleUp {
   0% {
-      transform: scale(0.6);
+      transform: scale(0.7);
   }
   100% {
       transform: scale(1);
   }
 }
+
+
 
 #title-header, #desc-header {
   color: white;
@@ -195,6 +209,35 @@ details:last-of-type{
   gap: 30px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about-para-1 {
+  width: 60%;
+  text-align: left;
+  /* order: 1; */
+  padding-right: 1em;
+}
+
+#about-para-1-img {
+  width: 40%;
+  height: 100%;
+}
+
+#about-para-2 {
+  width: 60%;
+  text-align: left;
+  padding-left: 1em;
+}
+
+#about-para-2-img {
+  width: 40%;
+}
 .menu a {
   text-decoration: none;
   color: whitesmoke;
@@ -307,13 +350,13 @@ details:last-of-type{
   opacity: 1;
 }
 .card:nth-child(odd).animate {
-  animation: slideInLeft 0.5s ease-out forwards;
+  animation: slideInLeft 1.5s ease-out forwards;
 }
 .card:nth-child(even).animate{
-  animation:slideInRight 0.5s ease-out forwards;
+  animation:slideInRight 1.5s ease-out forwards;
 }
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.05), translate(+15px, +15px);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.32);
 }
 
