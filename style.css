@@ -471,7 +471,7 @@ section h1:not(#papers-h1) {
   justify-content: center;
 }
 
-section h1 {
+section h1:not(#papers-h1) {
   padding: 0;
   margin: 1em;
   text-decoration: none;
@@ -480,10 +480,10 @@ section h1 {
   transform: scale(1.2);
   transition: transform 1s ease-out;
 }
-section h1.visible {
+section h1:not(#papers-h1).visible {
   transform: scale(1);
 }
-section h1::after {
+section h1:not(#papers-h1)::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -494,7 +494,7 @@ section h1::after {
   transition: width 1s ease-out, left 1s ease-out;
   transform: translateX(-50%);
 }
-section h1.visible::after {
+section h1:not(#papers-h1).visible::after {
   width: 100%;
   left: 50%;
 }
