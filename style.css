@@ -63,7 +63,7 @@ h1 {
   text-align: center;
 } 
 
-p {
+p:not(article > p) {
   text-align: justify;
 }
 
