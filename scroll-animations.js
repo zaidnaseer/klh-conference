@@ -1,7 +1,7 @@
 const observer = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
-      console.log(entry);
+      
       // If the element is visible
       if (entry.isIntersecting) {
         // Add the animation class
@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(entries => {
         observer.unobserve(entry.target);
       }
     });
-  });
+  }, {threshold: 0.6});
 
   const animationQueue = [];
   let isAnimating = false;
@@ -92,9 +92,9 @@ const observer = new IntersectionObserver(entries => {
           });
       }
   }, 100));
-  document.querySelectorAll('section h1, section > p').forEach(
+  document.querySelectorAll('section h1, section > p, .float-in-left, .float-in-right').forEach(
     el => {
-      observer.observe(el);
+        observer.observe(el);
     }
   );
 
