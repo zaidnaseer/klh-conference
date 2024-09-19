@@ -14,25 +14,50 @@
         <div class="progress-bar" id="progressBar"></div>
     </div>
     
-    <nav class="navbar">
-        <div class="logo">PPFL25</div>
-        <div class="menu">
-          <a href="#section-about">About</a>
-          <a href="#section-topics">Topics</a>
-          <a href="#section-faq">FAQ</a>
-          <a href="#section-committee">Committee</a>
-          <a href="#">Contact</a>
-          <!-- <a href="javascript:void(0);" id="navbar-icon" onclick="navbar_icon_clicked()">
-            <img src="images/hamburger_icon.svg" style="fill: #ff0000;" alt="Navigation Bar Icon" srcset="">
-          </a> -->
+    <nav>
+        <div id="first-row-mobile">
+            <div class="logo">
+                PPFL25
+            </div>
+            <div id="burger-icon">
+                <a href="javascript:void(0);" onclick="navbar_icon_clicked()" aria-label="Open the menu">
+                    <!-- <img src="images/hamburger_icon.svg" alt="" srcset=""> -->
+                    <div id="line-1"></div>
+                    <div id="line-2"></div>
+                    <div id="line-3"></div>
+                </a>
+            </div>
+            
         </div>
+        
+
+        <ul class="menu">
+            <li>
+                <a href="#section-about">About</a>
+            </li>
+            <li>
+                <a href="#section-topics">Topics</a>
+            </li>
+            <li>
+                <a href="#section-committee">Committee</a>
+            </li>
+            <li>
+                <a href="#section-faq">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
     </nav>
+
+    
+
     <!-- <script>document.querySelector('.menu-toggle').addEventListener('click', function() {
     document.querySelector('.menu').classList.toggle('active');
     });</script> -->
       
     <header>
-        <img src="images/hyd bg.jpg" alt="Background image of Hyderabad." id="background_hyd_image">
+        <img src="images/hyd bg.jpg" alt="Image of Charminar - Hyderabad" id="background_hyd_image">
         <div id="circle">
             <h1 id="title-header">PPFL 2025</h1>
             <p id="desc-header">The International Conference on Building Secure and Scalable <span class="no-wrap">Privacy-Enhanced</span> Federated Learning Systems</p>
@@ -59,7 +84,7 @@
             <p id="about-para-2">Additionally, robust anomaly detection mechanisms are integrated to safeguard against malicious participants and data poisoning. Implementing decentralized governance models can further enhance trust and compliance with global data protection regulations. The result is a federated system that not only respects user privacy but is also resilient and capable of operating at scale, making it suitable for widespread adoption in sensitive industries like healthcare and finance.</p>
         </div>
         <script src="countdown.js"></script>
-        <h2 >Conference Starts: </h2>
+        <h2>Conference Starts After</h2>
         
         <div class="countdown">
             <div class="countdown-item">
@@ -236,5 +261,13 @@
     <script src="accordion.js"></script>
     <script src="scroll-animations.js"></script>
     <script src="animation.js"></script>
+    <script>
+        function navbar_icon_clicked(){
+            const navlist = document.querySelector('nav ul');
+            document.querySelector('#burger-icon').classList.toggle('active');
+
+            navlist.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>

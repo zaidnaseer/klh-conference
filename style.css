@@ -69,7 +69,8 @@ p:not(article > p) {
 
 header {
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
+  height: 80vh;
 }
 
 #background_hyd_image {
@@ -196,14 +197,11 @@ details:last-of-type{
 
 .navbar {
   background-color: orangered;
-  padding: 0.3em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-
 
 #klh-logo-wrapper {
   display: flex;
@@ -223,99 +221,104 @@ details:last-of-type{
   color: #333;
   background-color: #E3F4F9;
   padding: 10px;
+  margin: 0.3em;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.menu {
+nav ul {
+  list-style: none;
   display: flex;
-  gap: 30px;
+  margin: 0.3em;
+  column-gap: 8px;
+}
+
+#burger-icon {
+  display: none;
+  margin: 0.3em;
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 2em;
+  flex-wrap: nowrap;
+  margin-bottom: 2em;
   justify-content: space-between;
   align-items: center;
 }
 
-#about-para-1 {
+.row p {
   width: 60%;
   text-align: left;
-  /* order: 1; */
+}
+
+.row img {
+  width: 40%;
+}
+
+#about-para-1 {
   padding-right: 1em;
 }
-
-#about-para-1-img {
-  width: 40%;
-  height: 100%;
-}
-
 #about-para-2 {
-  width: 60%;
-  text-align: left;
   padding-left: 1em;
 }
 
-#about-para-2-img {
-  width: 40%;
+#first-row-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.menu a {
+
+nav a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 550;
   position: relative;
   padding: 0.5em;
-  transition: background-color 0.75s ease-out;
+  transition: background-color 0.5s;
   border-radius: 5px;
 }
 
-.menu a:hover {
+nav a:hover, nav a:focus-visible {
   color: white;
   background-color: rgb(173, 46, 0);
 }
 
-.menu-toggle {
+#burger-icon a {
+  padding: 0.25em;
+}
+
+
+#burger-icon div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.active #line-2 {
+  opacity: 0;
+}
+
+.active #line-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.active #line-3 {
+  transform: rotate(+45deg) translate(-5px, -6px);
+}
+/* nav-toggle {
   display: none;
   cursor: pointer;
   font-size: 24px;
   color: whitesmoke;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: green;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .menu.active {
-    display: flex;
-  }
-
-  .menu a {
-    width: 100%;
-    text-align: center;
-  }
-
-  .menu-toggle {
-    display: block;
-    align-self: flex-end;
-    margin-top: -30px;
-  }
-}
+} */
+  
 
 /* End Navigation Bar Styling */
-/* .menu a::after {
+/* nav a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -350,7 +353,7 @@ details:last-of-type{
   }
 }
 .card-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -547,41 +550,22 @@ section dt.visible, section dd.visible {
   transform: translateX(0);
 } */
 
-#square_decoration {
+/* #square_decoration {
   width: 5vw;
   height: 5vw;
   background: maroon;
   transform: rotate(45deg) translateX(-25px);
 
   transition: width 2s, height 2s, transform 2s, background 2s;
-}
+} */
 
 /* when the user scrolls, this should play */
-#square_decoration:hover {
+/* #square_decoration:hover {
   width: 15vw;
   background: yellowgreen;
   height: 15vw;
   transform: rotate(225deg);
-}
-
-@media screen and (max-width: 768px) {
-  #circle {
-    width: 80vw;
-    height: 80vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-  }
-
-  #title-header {
-    font-size: 2rem;
-  }
-
-  #desc-header {
-    font-size: 1.5rem;
-  }
-}
+} */
 
 /* Media query for very small screens */
 @media screen and (max-width: 480px) {
@@ -589,10 +573,6 @@ section dt.visible, section dd.visible {
     width: 90vw;
     height: 90vw;
   }
-  
-nav {
-  width: 0;
-}
 
   #title-header {
     font-size: 1.5rem;
@@ -628,3 +608,86 @@ nav {
   font-weight: bold;
 }
 /* COUNTDOWN ENDS */
+
+@media screen and (max-width: 768px) {
+
+  #burger-icon {
+    display: inline-block;
+  }
+    
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    background-color: black;
+    width: 100%;
+    display: none;
+    margin: 0;
+
+    height: 0;
+    transition: height 1s;
+  }
+
+  nav ul.active {
+    display: block;
+    height: 100%;
+  }
+
+  nav li {
+    padding: 4px;
+    border: 1px solid #555;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  #circle {
+    width: 80vw;
+    height: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  #title-header {
+    font-size: 2rem;
+  }
+
+  #desc-header {
+    font-size: 1.5rem;
+  }
+
+  /* About Section */
+  
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .row img {
+    width: 100%;
+  }
+
+  .float-in-left img {
+    order: 0;
+  }
+  #about-para-1 {
+    order: 1;
+  }
+
+  .row p {
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  #about-para-1, #about-para-2 {
+    padding: 0;
+  }
+
+
+}
