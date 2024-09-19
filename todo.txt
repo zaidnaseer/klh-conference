@@ -6,6 +6,7 @@ Make website responsive
 
 progress bar should display after the navbar
 
+font-size
 
 
 DONE:
