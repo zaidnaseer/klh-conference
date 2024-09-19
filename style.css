@@ -195,7 +195,9 @@ details:last-of-type{
 
 /* Start Navigation Bar Styling */
 
-.navbar {
+/* TODO: Styling for burger icon */
+
+nav {
   background-color: orangered;
   display: flex;
   justify-content: space-between;
