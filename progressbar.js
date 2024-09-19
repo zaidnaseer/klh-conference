@@ -1,11 +1,9 @@
-window.addEventListener('scroll', function() {
-    const progressBar = document.getElementById('progressBar');
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    progressBar.style.width = scrollPercent + '%';
-    
-    // const squareDecoration = document.getElementById('square_decoration');
-    // squareDecoration.classList.add('scrolled');
-    
+const scrollProgress = document.getElementById("progress-bar");
+const height =
+  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener("scroll", () => {
+  const scrollTop =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
 });
