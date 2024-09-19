@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(entries => {
         observer.unobserve(entry.target);
       }
     });
-  }, {threshold: 0.6});
+  }, {threshold: 0.3});
 
   const animationQueue = [];
   let isAnimating = false;
