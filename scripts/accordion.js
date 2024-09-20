@@ -1,3 +1,7 @@
+/*
+    CREDITS: GrahamTheDev https://dev.to/grahamthedev
+    https://dev.to/grahamthedev/accessible-animated-accordion-in-pure-css-no-way-5980
+*/
 class Tota11yAccordion {
     constructor(el, options) {
       self = this;  
