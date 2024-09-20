@@ -581,24 +581,29 @@ section dt.visible, section dd.visible {
   }
 }
 /* COUNTDOWN CSS STARTS */
+
+#countdown-label {
+  text-align: center;
+}
+
 .countdown {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-  background-color: rgb(251, 247, 245);;
-  
+  margin: .25em; /* old: 20px */
+  background-color: rgb(251, 247, 245);
+  flex-wrap: wrap;  
 }
 
 .countdown-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: .3em; /* old: 10px */
   background-color: #333;
   color: #fff;
   border-radius: 5px;
-  margin: 0 5px;
+  margin: .25em;
 }
 
 .countdown-item span:first-child {
