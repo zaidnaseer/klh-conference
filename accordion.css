@@ -1,5 +1,9 @@
+/*
+    CREDITS: GrahamTheDev https://dev.to/grahamthedev
+    https://dev.to/grahamthedev/accessible-animated-accordion-in-pure-css-no-way-5980
+*/
 :root{
-    --tota11y-acc-padding: 2rem 1.5rem;
+    --tota11y-acc-padding: 2rem 3.25rem 2rem 1.5rem;
     --tota11y-acc-content-padding: 0.5rem 2rem 2rem 2rem;
     --tota11y-acc-colour: black;
     --tota11y-acc-border-radius: 1rem;
@@ -55,7 +59,7 @@ summary:before {
     height: 2rem;
     position: absolute;
     top: var(--tota11y-acc-marker-top);
-    right: 1.5rem;
+    right: 1rem;
     transform: rotate(0deg);
     transform-origin: 1rem 50%;
     transition: var(--tota11y-acc-marker-transition-time) transform ease;
