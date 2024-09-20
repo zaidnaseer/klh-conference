@@ -10,8 +10,6 @@
 </head>
 <body>
 
-    
-    
     <nav>
         <div id="first-row-mobile">
             <div class="logo">
@@ -62,7 +60,7 @@
             <h1 id="title-header">PPFL 2025</h1>
             <p id="desc-header">The International Conference on Building Secure and Scalable <span class="no-wrap">Privacy-Enhanced</span> Federated Learning Systems</p>
         </div>
-        <script src="circle.js"></script>
+        <script src="scripts/circle.js"></script>
     </header>
     
     <main>
@@ -83,31 +81,36 @@
             <img src="images/smart city.jpg" alt="" srcset="" id="about-para-2-img">
             <p id="about-para-2">Additionally, robust anomaly detection mechanisms are integrated to safeguard against malicious participants and data poisoning. Implementing decentralized governance models can further enhance trust and compliance with global data protection regulations. The result is a federated system that not only respects user privacy but is also resilient and capable of operating at scale, making it suitable for widespread adoption in sensitive industries like healthcare and finance.</p>
         </div>
-        <script src="countdown.js"></script>
-        <h2>Conference Starts After</h2>
+
+        <div id="countdown-div">
+            <script src="scripts/countdown.js"></script>
+            <h2 id="countdown-label">Conference Starts In</h2>
         
-        <div class="countdown">
-            <div class="countdown-item">
-                <span id="months">0</span>
-                <span>Months</span>
-            </div>
-            <div class="countdown-item">
-                <span id="days">0</span>
-                <span>days</span>
-            </div>
-            <div class="countdown-item">
-                <span id="hours">0</span>
-                <span>hours</span>
-            </div>
-            <div class="countdown-item">
-                <span id="minutes">0</span>
-                <span>min</span>
-            </div>
-            <div class="countdown-item">
-                <span id="seconds">0</span>
-                <span>sec</span>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="months">0</span>
+                    <span>Months</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="days">0</span>
+                    <span>Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">0</span>
+                    <span>Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">0</span>
+                    <span>Min</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">0</span>
+                    <span>Sec</span>
+                </div>
             </div>
         </div>
+        
+        
         
         <article id="papers-article">
             <div class="h1-wrapper"><h1 id="papers-h1">Call for Papers</h1></div>
@@ -257,10 +260,10 @@
 
     </main>
 
-    <script src="progressbar.js"></script>
-    <script src="accordion.js"></script>
-    <script src="scroll-animations.js"></script>
-    <script src="animation.js"></script>
+    <script src="scripts/progressbar.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/scroll-animations.js"></script>
+    <script src="scripts/animation.js"></script>
     <script>
         function navbar_icon_clicked(){
             const navlist = document.querySelector('nav ul');
