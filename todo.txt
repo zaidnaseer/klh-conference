@@ -8,6 +8,7 @@ progress bar should display after the navbar
 
 font-size
 
+animations should play more than once
 
 DONE:
 opening tray animation when faq section is opened
