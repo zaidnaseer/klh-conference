@@ -1,6 +1,6 @@
 /*
     CREDITS: GrahamTheDev https://dev.to/grahamthedev
-    https://dev.to/grahamthedev/accessible-animated-accordion-in-pure-css-no-way-5980
+    https://dev.to/tota11ydev/accordions-1-5-and-10-minute-versionsall-accessible-quicka11y-2d3b
 */
 class Tota11yAccordion {
     constructor(el, options) {
