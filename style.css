@@ -246,8 +246,9 @@ nav ul {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 2em;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin: 5%;
 }
 
 .row p {
@@ -712,7 +713,6 @@ footer {
   
   .row {
     flex-direction: column;
-    width: 100%;
   }
 
   .row img {
@@ -725,7 +725,6 @@ footer {
   #about-para-1 {
     order: 1;
   }
-
 
   .row p {
     padding: 0;

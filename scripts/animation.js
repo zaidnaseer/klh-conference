@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }, {
-      threshold: 0.1 // Adjust this value as needed
+      threshold: 0.3 // Adjust this value as needed
     });
   
     cards.forEach(card => {
