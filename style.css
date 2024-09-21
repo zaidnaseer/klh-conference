@@ -69,7 +69,7 @@ p:not(article > p) {
 header {
   position: relative;
   overflow: hidden;
-  height: 80vh;
+  height: 93vh;
 }
 
 #background_hyd_image {
@@ -176,19 +176,20 @@ details:last-of-type{
   }
 }
 
-
-
 #title-header, #desc-header {
   color: white;
   text-align: center;
-  font-size: 2rem;
-  font-weight: 500;
-  padding:.25em;
 }
 
 #title-header {
-  font-size: 3rem;
-  font-weight: 900;
+  font-size: 48px;
+  padding: 0.2em;
+  /* font-weight: 900; */
+}
+
+#desc-header {
+  font-size: 28px;
+  padding: 0.55em;
 }
 
 /* End Circle Styling */
@@ -565,21 +566,6 @@ section dt.visible, section dd.visible {
   transform: rotate(225deg);
 } */
 
-/* Media query for very small screens */
-@media screen and (max-width: 480px) {
-  #circle {
-    width: 90vw;
-    height: 90vw;
-  }
-
-  #title-header {
-    font-size: 1.5rem;
-  }
-
-  #desc-header {
-    font-size: 1rem;
-  }
-}
 /* COUNTDOWN CSS STARTS */
 
 #countdown-label {
@@ -612,7 +598,74 @@ section dt.visible, section dd.visible {
 }
 /* COUNTDOWN ENDS */
 
+footer {
+  background-color: black;
+  color: white;
+  padding: .5em;
+}
+
+@media screen and (max-width: 1200px) {
+  #title-header {
+    font-size: 39px;
+  }
+
+  #desc-header {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #circle {
+    width: 80vw;
+    height: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  #title-header {
+    font-size: 54px;
+    padding-bottom: .2em;
+  }
+  #desc-header {
+    font-size: 32px;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .row img {
+    width: 100%;
+  }
+
+  .float-in-left img {
+    order: 0;
+  }
+  #about-para-1 {
+    order: 1;
+  }
+
+  .row p {
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  #about-para-1, #about-para-2 {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
+
+  #title-header {
+    font-size: 46px;
+  }
+
+  #desc-header {
+    font-size: 27px;
+  }
 
   #burger-icon {
     display: inline-block;
@@ -646,23 +699,6 @@ section dt.visible, section dd.visible {
     display: block;
   }
 
-  #circle {
-    width: 80vw;
-    height: 80vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-  }
-
-  #title-header {
-    font-size: 2rem;
-  }
-
-  #desc-header {
-    font-size: 1.5rem;
-  }
-
   /* About Section */
   
   .row {
@@ -693,5 +729,18 @@ section dt.visible, section dd.visible {
     padding: 0;
   }
 
+}
 
+/* Media query for phones */
+@media screen and (max-width: 600px) {
+  #circle {
+    width: 95vw;
+    height: 95vw;
+  }
+  #title-header {
+    font-size: 34px;
+  }
+  #desc-header {
+    font-size: 21px;
+  }
 }
