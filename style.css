@@ -16,17 +16,18 @@ body {
 
 #papers-article {
   padding: 0 1em;
+  margin: 1em 0;
   text-align: center;
   border: 2px solid #555;
   border-radius: 5px;
   background-color: bisque;
   color: #333;
 }
-#papers-article h1 {
+/* #papers-article h2 {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
-}
+} */
 #papers-article p {
   padding-bottom: 1em;
 }
@@ -442,8 +443,16 @@ nav a {
   opacity: 1;
 }
 
-section h1:not(#papers-h1) {
+h1 {
   font-size: 3rem;
+}
+
+h2 {
+  margin: .5em;
+  font-size: 1.7rem;
+}
+
+section h1 {
   text-decoration: underline;
   text-decoration-color: yellowgreen;
   text-underline-offset: 6px;
@@ -473,7 +482,7 @@ section h1:not(#papers-h1) {
   justify-content: center;
 }
 
-section h1:not(#papers-h1) {
+section h1 {
   padding: 0;
   margin: 1em;
   text-decoration: none;
@@ -482,21 +491,21 @@ section h1:not(#papers-h1) {
   transform: scale(1.2);
   transition: transform 1s ease-out;
 }
-section h1:not(#papers-h1).visible {
+section h1.visible {
   transform: scale(1);
 }
-section h1:not(#papers-h1)::after {
+section h1::after {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -5px;
+  bottom: -2px;
   width: 0;
   height: 3px;
   background-color: yellowgreen;
   transition: width 1s ease-out, left 1s ease-out;
   transform: translateX(-50%);
 }
-section h1:not(#papers-h1).visible::after {
+section h1.visible::after {
   width: 100%;
   left: 50%;
 }
