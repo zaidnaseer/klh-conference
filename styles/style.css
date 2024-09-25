@@ -206,6 +206,29 @@ nav {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+table {
+  max-width: fit-content;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid #777;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: hsl(195, 53%, 90%);
+}
+
 #klh-logo-wrapper {
   display: flex;
   justify-content: center;
