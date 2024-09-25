@@ -29,7 +29,7 @@ body {
   font-weight: 600;
 } */
 #papers-article p {
-  padding-bottom: 1em;
+  padding-bottom: 2rem;
 }
 
 #profession {
@@ -38,7 +38,7 @@ body {
 }
 
 section {
-  padding: 1em;
+  padding: 2rem;
 }
 
 section:nth-of-type(odd) {
@@ -49,6 +49,10 @@ section:nth-of-type(odd) {
   text-align: center;
 }
 
+#section-committee dl {
+  margin-top: 2rem;
+}
+
 #section-committee dt {
   font-weight: 600;
   margin-top: .75em;
@@ -57,11 +61,6 @@ section:nth-of-type(odd) {
 #section-committee dd {
   margin-bottom: .75em;
 }
-
-h1 {
-  padding: .75em;
-  text-align: center;
-} 
 
 p:not(article > p) {
   text-align: justify;
@@ -248,7 +247,7 @@ nav ul {
   margin-bottom: 2em;
   justify-content: center;
   align-items: center;
-  margin: 5%;
+  margin: 2rem 0;
 }
 
 .row p {
@@ -294,7 +293,6 @@ nav a {
 #burger-icon a {
   padding: 0.25em;
 }
-
 
 #burger-icon div {
   width: 25px;
@@ -359,12 +357,14 @@ nav a {
     opacity: 1;
   }
 }
+
 .card-container {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.5rem;
 
 }
 .card {
@@ -372,7 +372,7 @@ nav a {
   background-color: #55d5d5;
   width: 250px;
   height: 150px;
-  position:relative;
+  position: relative;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.6);
@@ -446,6 +446,8 @@ nav a {
 
 h1 {
   font-size: 3rem;
+  padding: .75em;
+  text-align: center;
 }
 
 h2 {
@@ -485,7 +487,7 @@ section h1 {
 
 section h1 {
   padding: 0;
-  margin: 1em;
+  margin: 1rem;
   text-decoration: none;
   position: relative;
   display: inline-block;

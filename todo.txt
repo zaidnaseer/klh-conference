@@ -1,6 +1,6 @@
-text float in animations
+Bootstrap
 
-timeline
+srcset images
 
 Make website responsive
 
@@ -10,7 +10,4 @@ font-size
 
 animations should play more than once
 
-DONE:
-opening tray animation when faq section is opened
-design committee section
-Scroll animation when user presses a link in nav bar 
+support for different browsers
