@@ -76,7 +76,7 @@ const observer = new IntersectionObserver(entries => {
       newlyVisibleElements.forEach(el => observerQueue.unobserve(el));
   }
 
-  const observerQueue = new IntersectionObserver(handleVisibleElements, { threshold: 0.1 });
+  const observerQueue = new IntersectionObserver(handleVisibleElements, { threshold: 0.3 });
 
   document.querySelectorAll('section dt, section dd').forEach(el => {
       observerQueue.observe(el);

@@ -369,7 +369,7 @@ nav a {
 }
 .card {
   display: inline-block;
-  background-color: #55d5d5;
+  background-color: lightblue;
   width: 250px;
   height: 150px;
   position: relative;
@@ -383,10 +383,10 @@ nav a {
   opacity: 1;
 }
 .card:nth-child(odd).animate {
-  animation: slideInLeft 1.5s ease-out forwards;
+  animation: slideInLeft 1.25s ease-out forwards;
 }
 .card:nth-child(even).animate{
-  animation:slideInRight 1.5s ease-out forwards;
+  animation: slideInRight 1.25s ease-out forwards;
 }
 .card:hover {
   transform: scale(1.05), translate(+15px, +15px);
@@ -527,7 +527,7 @@ section > p.visible {
 section dt, section dd {
   opacity: 0;
   transform: translateX(-20px) scale(0.95);
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
   will-change: opacity, transform;
 }
 
