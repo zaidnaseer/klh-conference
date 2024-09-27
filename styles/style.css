@@ -49,10 +49,6 @@ section:nth-of-type(odd) {
   text-align: center;
 }
 
-#section-committee dl {
-  margin-top: 2rem;
-}
-
 #section-committee dt {
   font-weight: 600;
   margin-top: .75em;
@@ -211,7 +207,6 @@ table {
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
   background-color: white;
 }
 
@@ -270,7 +265,7 @@ nav ul {
   margin-bottom: 2em;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .row p {
@@ -382,7 +377,6 @@ nav a {
 }
 
 .card-container {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -510,7 +504,7 @@ section h1 {
 
 section h1 {
   padding: 0;
-  margin: 1rem;
+  margin-bottom: 2rem;
   text-decoration: none;
   position: relative;
   display: inline-block;
