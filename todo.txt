@@ -1,13 +1,17 @@
-Bootstrap
+1.Bootstrap
 
-srcset images
+2.srcset images
 
-Make website responsive
+3.Make website responsive
 
-progress bar should display after the navbar
+4.progress bar should display after the navbar
 
-font-size
+5.font-size
 
-animations should play more than once
+6.animations should play more than once
 
-support for different browsers
+7.support for different browsers
+
+8. KEY DATE:
+    1. Select colors best according to the website
+    2. Adjust size & width.
