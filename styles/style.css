@@ -418,6 +418,9 @@ section h1 {
 
 /* Key Dates Starts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.timelinebox {
+  background-color:rgb(251, 247, 245);
+}
 .timeline {
   width: 800px;
   background-color: #072736;
