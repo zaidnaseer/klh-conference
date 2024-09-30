@@ -545,15 +545,52 @@ section dt.visible, section dd.visible {
   transform: translateX(0) scale(1);
 }
 
+/* #section-topics ul {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+#section-topics ul li {
+  width: 100%;
+  padding: 5px;
+} */
+/* Media query for screens wider than 480px */
+/* @media screen and (min-width: 480px) {
+  #section-topics ul li {
+      width: 50%;
+      float: left;
+  }
+  Clearfix to contain floated elements 
+  #section-topics ul:after {
+      content: "";
+      display: table;
+      clear: both;
+   } 
+} */
+
 #section-topics {
   text-align: center;
+  margin: 2rem;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 #section-topics ul {
+  columns: 2;
   display: inline-block;
   text-align: left;
 }
 
+#section-topics li {
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+#section-topics li:last-of-type {
+  margin-bottom: .25rem;
+}
 /* section dt{
   opacity: 0;
   transform: translateX(-20px);
@@ -614,7 +651,7 @@ section dt.visible, section dd.visible {
   flex-direction: column;
   align-items: center;
   padding: .5em; /* old: 10px */
-  background-color: #333;
+  background-color: darkslategray;
   color: #fff;
   border-radius: 5px;
   margin: .25em;
