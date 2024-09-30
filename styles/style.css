@@ -735,7 +735,26 @@ footer {
   #burger-icon {
     display: inline-block;
   }
+
+  section {
+    padding: 1.2rem;
+  }
+
+  #section-topics {
+    margin: 1.2rem;
+  }
+
+  #section-timeline ol {
+    width: 100%;
+  }
+
+  #section-timeline time {
+    font-size: 1rem;
+  }
     
+  section h1 {
+    margin-bottom: 1.2rem;
+  }
   nav {
     flex-direction: column;
   }
@@ -771,7 +790,7 @@ footer {
   }
 
   .row img {
-    width: 100%;
+    width: 75%;
   }
 
   .float-in-left img {
@@ -814,5 +833,8 @@ footer {
   }
   h2 {
     font-size: 1.25rem;
+  }
+  #section-topics ul {
+    columns: 1;
   }
 }
