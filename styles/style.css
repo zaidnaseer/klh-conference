@@ -84,61 +84,7 @@ header {
   }
 }
 
-/* FAQ Section */
 
-/* summary {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-} */
-
-
-
-/* summary::after {
-  content: '';
-  width: 18px;
-  height: 10px;
-  background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
-  background-size: cover;
-  transition: .5s;
-}
-
-details[open] > summary::after {
-  transform: rotate(180deg);
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary {
-  font-size: 1.4rem;
-  border-radius: 5px;
-  padding: .5em 0;
-}
-
-details[open] summary {border-radius: 5px 5px 0 0;}
-
-details { 
-  cursor: pointer;
-  border: 1px solid #777;
-  border-bottom: 0px;
-  padding: .5em;
-}
-
-details:first-of-type{
-  border-radius: 5px 5px 0 0;
-}
-
-details:last-of-type{
-  border-radius: 0 0 5px 5px;
-  border-bottom: 1px solid #777;
-} */
-
-
-/* End FAQ Styling */
 
 /* Start Circle Styling */
 
@@ -180,7 +126,7 @@ details:last-of-type{
 #title-header {
   font-size: 48px;
   padding: 0.2em;
-  /* font-weight: 900; */
+
 }
 
 #desc-header {
@@ -192,7 +138,7 @@ details:last-of-type{
 
 /* Start Navigation Bar Styling */
 
-/* TODO: Styling for burger icon */
+
 
 nav {
   background-color: teal;
@@ -229,7 +175,7 @@ th {
   justify-content: center;
   align-items: center;
   padding: 2em;
-  /* background-color: rgb(251, 247, 245); */
+ 
 }
 
 #klh-logo-wrapper img {
@@ -354,67 +300,6 @@ nav a {
   transition: transform 0.3s ease;
 } */
 
-/* Topic Card Starts */
-
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slideInRight {
-  from{
-    transform: translateX(50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.float-in-left {
-  transform: translateX(-20px);
-  opacity: 0;
-  transition: transform 1s, opacity 1.5s;
-}
-
-.float-in-right {
-  transform: translateX(+20px);
-  opacity: 0;
-  transition: transform 1s, opacity 2s;
-}
-
-.float-in-left.visible, .float-in-right.visible {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-h1 {
-  font-size: 2.7rem;
-  padding: .75em;
-  text-align: center;
-}
-
-h2 {
-  margin: .5em;
-  font-size: 1.7rem;
-}
-
-section h1 {
-  text-decoration: underline;
-  text-decoration-color: yellowgreen;
-  text-underline-offset: 6px;
-}
-
-.no-wrap {
-  white-space: nowrap;
-}
-/* Topic Card Ends*/
 
 /* Key Dates Starts */
 ol {
@@ -481,7 +366,7 @@ ol li:before{
   top: 0;
   width: 0%;
   height: 7px;
-  background: darkorchid;
+  background: yellowgreen;
   z-index: 10000;
 }
 
