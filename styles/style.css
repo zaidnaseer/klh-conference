@@ -417,79 +417,61 @@ section h1 {
 /* Topic Card Ends*/
 
 /* Key Dates Starts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-.timelinebox {
-  background-color:rgb(251, 247, 245);
-}
-.timeline {
-  width: 800px;
-  background-color: #072736;
-  color: #fff;
+ol {
   padding: 30px 50px;
   width: 55%;
-  
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin: 0 auto; /* Center horizontally */
-}
-.timeline h2{
-  margin-top: 10px;
-}
-.timeline ul{
+  margin: 0 auto;
   list-style-type:none;
   border-left:2px solid #094a68;
-  padding:10px 5px;
+  padding: 5px;
 }
-.timeline ul li{
-  padding:20px 20px;
+ol li {
+  background-color:hsl(20, 43%, 92%);
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
   position:relative;
-  cursor:pointer;
+  /* cursor:pointer; */
   transition:.5s;
 }
-.timeline ul li span{
-  display:inline-block;
-  background-color:#1685b8;
-  border-radius:25px;
-  padding:2px 5px;
-  font-size:15px;
+ol li time {
+  display: inline-block;
+  background-color: darkslategray;
+  color: white;
+  border-radius: 1rem;
+  padding: .4rem;
+  font-size: 1.15rem;
   text-align:center;
 }
-.timeline ul li .Timeline-content h3{
-  color:#34ace0;
-  font-size:17px;
-  padding-top:11px;
+ol li span{
+  color: darkgreen;
+  display: block;
+  padding-top: 11px;
+  font-weight: 500;
 }
-.timeline ul li .Timeline-content h5 {
-    color: lightgray;
-    padding-top: 0.5px;
-}
-.timeline ul li:before{
+ol li:before{
   position:absolute;
   content:'';
   width:10px;
   height:10px;
   background-color:#34ace0;
   border-radius:50%;
-  left:-11px;
+  left:-27px;
   top:28px;
   transition:.5s;
 }
-.timeline ul li:hover{
-  background-color:#071f2a;
-}
-.timeline ul li:hover:before{
-  background-color:#0F0;
-  box-shadow:0px 0px 10px 2px #0F0;
-}
-@media (max-width:300px){
-  .timeline{
-    width:100%;
-    padding:30px 5px 30px 10px;
-  }
-  .timeline ul li .Timeline-content h3{
-    color:#34ace0;
-    font-size:15px;
-  }
 
+
+@media(hover: hover) and (pointer: fine) {
+  ol li:hover{
+    translate: -2px -2px -2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  ol li:hover:before{
+    translate: 2px 2px 2px;
+    background-color:#0F0;
+    box-shadow:0px 0px 10px 2px #0F0;
+  }
 }
 
 /* Key Dates Ends */
