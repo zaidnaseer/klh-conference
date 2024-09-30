@@ -1,4 +1,4 @@
-1.Bootstrap
+1. Timeline Design
 
 2.srcset images
 
@@ -15,3 +15,13 @@
 8. KEY DATE:
     1. Select colors best according to the website
     2. Adjust size & width.
+
+9. Different animations for different headings
+
+10. Bootstrap
+
+11. H1 margins
+
+12. change footer semantics
+
+13. keyboard navigation
