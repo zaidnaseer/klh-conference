@@ -456,11 +456,13 @@ section dt.visible, section dd.visible {
    } 
 } */
 
+ /* TOPICS STARTS */
 #section-topics {
   text-align: center;
   margin: 2rem;
   border: 1px solid black;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  
 }
 
 #section-topics ul {
@@ -477,6 +479,9 @@ section dt.visible, section dd.visible {
 #section-topics li:last-of-type {
   margin-bottom: .25rem;
 }
+
+/* TOPICS ENDS */
+
 /* section dt{
   opacity: 0;
   transform: translateX(-20px);
