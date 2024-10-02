@@ -55,10 +55,6 @@ section:nth-of-type(odd) {
   margin-top: .75em;
 }
 
-#section-committee dd {
-  margin-bottom: .75em;
-}
-
 p:not(article > p) {
   text-align: justify;
 }
