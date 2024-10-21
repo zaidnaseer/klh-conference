@@ -167,18 +167,6 @@ th {
   background-color: hsl(195, 53%, 90%);
 }
 
-#klh-logo-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
- 
-}
-
-#klh-logo-wrapper img {
-  max-width: 100%;
-}
-
 .logo {
   font-size: 24px;
   font-weight: bold;
