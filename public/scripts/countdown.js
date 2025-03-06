@@ -6,7 +6,7 @@ function countdown() {
     const secondsElement = document.getElementById("seconds");
 
     const now = new Date();
-    const targetDate = new Date("2024-12-31 00:00:00"); // Replace with your desired target date
+    const targetDate = new Date("2026-02-05 00:00:00"); // Replace with your desired target date
 
     const timeDiff = targetDate - now;
 
