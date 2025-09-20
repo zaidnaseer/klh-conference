@@ -51,7 +51,16 @@ section:nth-of-type(odd) {
 
 #section-committee dt {
   font-weight: 600;
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+  background-color: white;
+  padding: .5em;
+  margin: .5em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid gray;
   margin-top: .75em;
+  font-size: 1.5rem;
 }
 
 p:not(article > p) {
